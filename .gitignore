@@ -1,5 +1,6 @@
 *.class
 
+# ignore out directory
 JFX/out
 
 # Mobile Tools for Java (J2ME)
