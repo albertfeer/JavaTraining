@@ -4,22 +4,26 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class Controller {
 
     @FXML
     private TextField someText;
+    @FXML
+    private TextArea textArea;
 
     @FXML
     void sayText(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Information Dialog");
+        String strTitle = someText.getText();
+        alert.setTitle(strTitle);
 
-        String strText = someText.getText();
-        alert.setHeaderText(strText);
+        String strHeaderText = textArea.getText();
+        alert.setHeaderText(strHeaderText);
 
-        alert.setContentText("Got your input text: " + strText);
+        alert.setContentText("Got your input text length is: " + strHeaderText.length());
 
         alert.showAndWait();
     }
