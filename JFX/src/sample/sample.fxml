@@ -25,6 +25,6 @@
       <Button fx:id="btnSayText" mnemonicParsing="false" onAction="#sayText" prefHeight="23.0" prefWidth="91.0" text="Say Text" GridPane.columnIndex="1" />
       <Button fx:id="btnSayHello" mnemonicParsing="false" onAction="#sayHello" prefHeight="23.0" prefWidth="91.0" text="Say Hello" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
-      <ListView prefHeight="187.0" prefWidth="260.0" GridPane.rowIndex="3" />
+      <ListView fx:id="listView" prefHeight="187.0" prefWidth="260.0" GridPane.rowIndex="3" />
    </children>
 </GridPane>
