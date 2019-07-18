@@ -212,7 +212,7 @@ public class Controller {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Hello");
         alert.setHeaderText(null);
-        alert.setContentText("Hello");
+        alert.setContentText("Test2");
 
         alert.showAndWait();
     }
